@@ -63,6 +63,7 @@ namespace Actividad8._1
                     string dni = linea.Substring(0, 9);
                     string nombre = linea.Substring(9, 10).Trim();
                     string importe = linea.Substring(19, 9);
+                    Cuenta c = new Cuenta(nombre, Convert.ToInt32(dni), Convert.ToDouble(importe));
                 }
             }
         }
